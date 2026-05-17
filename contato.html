@@ -1,86 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
+  <head>
     <title>Contato - Entra21</title>
     <link rel="stylesheet" href="assets\css\styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="main-header">
-        <h1>
-            <img src="https://cdn.sonicadigital.com.br/entra21/storage/settings/1/original-691cbe5cd50d1.png"
-                alt="ENTRA 21" height="60" />
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="js.html">JS</a></li>
-                <li><a href="frontend_backend.html">Frontend X Backend</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>
+        <img
+          src="https://cdn.sonicadigital.com.br/entra21/storage/settings/1/original-691cbe5cd50d1.png"
+          alt="ENTRA 21"
+          height="60"
+        />
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="js.html">JS</a></li>
+          <li><a href="frontend_backend.html">Frontend X Backend</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main-content p-3">
-        <h2 class="main-content-title">Entre em contato com nosso time</h2>
-        <div class="row p-1">
-            <form action="contato.php" method="post" autocomplete="off">
-                <div class="p-1">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
+      <h2 class="main-content-title">Entre em contato com nosso time</h2>
+      <div class="row p-1">
+        <form action="contato.php" method="post" autocomplete="off">
+          <div class="p-1">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" />
+          </div>
 
-                <div class="p-1">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
+          <div class="p-1">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
 
-                <div class="p-1">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" name="telefone" id="telefone" maxlength="15">
-                </div>
+          <div class="p-1">
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" maxlength="15" />
+          </div>
 
-                <div class="p-1">
-                    <select name="cidade" id="cidade">
-                        <option value="1">Selecione uma cidade</option>
-                        <option value="2">Blumenal</option>
-                        <option value="3">Brusque</option>
-                        <option value="4">Gaspar</option>
-                        <option value="5">Indaial</option>
-                        <option value="6">Itajaí</option>
-                        <option value="7">Balneário Camboriu</option>
-                        <option value="8">Rio do Sul</option>
-                        <option value="9">Timbó</option>
+          <div class="p-1">
+            <select name="cidade" id="cidade">
+              <option value="1">Selecione uma cidade</option>
+              <option value="2">Blumenal</option>
+              <option value="3">Brusque</option>
+              <option value="4">Gaspar</option>
+              <option value="5">Indaial</option>
+              <option value="6">Itajaí</option>
+              <option value="7">Balneário Camboriu</option>
+              <option value="8">Rio do Sul</option>
+              <option value="9">Timbó</option>
+            </select>
+          </div>
 
-                    </select>
-                </div>
+          <div class="p-1">
+            <label>Tipo:</label>
+            <input type="radio" name="tipo" id="tipo_aluno" value="aluno" />
+            <label for="tipo_aluno">Aluno</label>
+            <input
+              type="radio"
+              name="tipo"
+              id="tipo_parceiro"
+              value="parceiro"
+            />
+            <label for="tipo_parceiro">Parceiro</label>
+          </div>
 
-                <div class="p-1">
-                    <label>Tipo:</label>
-                    <input type="radio" name="tipo" id="tipo_aluno" value="aluno">
-                    <label for="tipo_aluno">Aluno</label>
-                    <input type="radio" name="tipo" id="tipo_parceiro" value="parceiro">
-                    <label for="tipo_parceiro">Parceiro</label>
-                </div>
+          <div class="p-1">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              rows="5"
+              cols="50"
+              maxlength="5000"
+            ></textarea>
+          </div>
 
-                <div class="p-1">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="mensagem" rows="5" cols="50" maxlength="5000"></textarea>
-                </div>
+          <div class="p-1">
+            <input type="checkbox" name="termos" id="termos" />
+            <label for="termos">Aceito os termos de uso</label>
+          </div>
 
-                <div class="p-1">
-                    <input type="checkbox" name="termos" id="termos">
-                    <label for="termos">Aceito os termos de uso</label>
-                </div>
-
-                <div class="p-1">
-                    <button type="submit">Enviar requisição</button>
-                </div>
-            </form>
-        </div>
+          <div class="p-1">
+            <button type="submit">Enviar requisição</button>
+          </div>
+        </form>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
